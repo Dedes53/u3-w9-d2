@@ -6,7 +6,12 @@ function App() {
 
   return (
     <>
+      {/* navbar */}
       <MyNav brand="EpiBook!" />
+
+      {/* main */}
+
+      {/* footer */}
       <MyFooter />
     </>
   )
