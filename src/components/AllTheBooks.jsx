@@ -15,7 +15,7 @@ class AllTheBooks extends Component {
                     {fantasy.map((book) => (
                         <Col xs={12} md={6} lg={4} xl={3} key={book.asin}>
                             <Card className="mb-3" >
-                                <Card.Img fluid={true} variant="top" src={book.img} className="object-fit-cover" />
+                                <Card.Img variant="top" src={book.img} className="object-fit-cover" />
                                 <Card.Body>
                                     <Card.Title>{book.title}</Card.Title>
                                     <div className="d-flex justify-content-between align-items-center">
