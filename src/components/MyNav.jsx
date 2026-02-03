@@ -7,7 +7,7 @@ function MyNav(props) {
 
     return (
 
-        <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar expand="md" className="bg-body-tertiary">
             <Container>
                 <Navbar.Brand href="#home">{props.brand}</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -16,7 +16,7 @@ function MyNav(props) {
                         <Nav.Link href="#">Home</Nav.Link>
                         <Nav.Link href="#">About</Nav.Link>
                         <Nav.Link href="#">Browse</Nav.Link>
-                        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                        <NavDropdown title="Genres" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">
                                 Another action
