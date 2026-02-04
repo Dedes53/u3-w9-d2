@@ -7,6 +7,7 @@ class SingleBook extends Component {
     state = {
         seleced: false
     }
+    // cliccando su una card dovrà verificarsi un cambio di stato e selected diventerà true. A questo punto la card deve ricevere un bordo colorato edell'ombra (ad esempio di colore blu)
 
     render() {
         // in una class le props non si possono passare, quindi bisogna usare this.props.esempio
@@ -16,7 +17,11 @@ class SingleBook extends Component {
 
         return (
             <Col xs={12} md={6} lg={4} xl={3} key={this.props.asin}>
-                <Card className="mb-3" >
+                <Card className="mb-3"
+                    // do a style una condizione basata sullo stato. Quindi se selected è true style avrà un valore (il bordo blue), altrimenti se false style sarà vuoto. 
+                    style={this.state.seleced ? { boxShadow: "0 0 10px blue" } : {}}
+                    onClick={() => this.setState({ seleced: !this.state.seleced })}
+                >
                     <Card.Img variant="top" src={this.props.img} className="object-fit-cover" />
                     <Card.Body>
                         <Card.Title>{this.props.title}</Card.Title>

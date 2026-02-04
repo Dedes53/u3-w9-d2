@@ -17,6 +17,7 @@ function App() {
 
       {/* main */}
       <Welcome />
+
       <BookList books={fantasy} />
       {/* <AllTheBooks /> */}
 
