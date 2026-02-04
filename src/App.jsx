@@ -2,7 +2,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import MyNav from "./components/MyNav"
 import Welcome from './components/Welcome';
 import AllTheBooks from './components/AllTheBooks';
+import BookList from './components/BookList';
 import MyFooter from "./components/MyFooter"
+
+//BooksData
+import fantasy from './books/fantasy.json'
 
 function App() {
 
@@ -13,7 +17,8 @@ function App() {
 
       {/* main */}
       <Welcome />
-      <AllTheBooks />
+      <BookList books={fantasy} />
+      {/* <AllTheBooks /> */}
 
       {/* footer */}
       <MyFooter />
