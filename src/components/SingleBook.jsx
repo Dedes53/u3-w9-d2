@@ -14,7 +14,6 @@ class SingleBook extends Component {
         //ES: const { img, title, category, price } = this.props;
         //a questo punto nel mio codice posso usare direttamente img, title, category, price senza this.props tra {} 
 
-
         return (
             <Col xs={12} md={6} lg={4} xl={3} key={this.props.asin}>
                 <Card className="mb-3" >
