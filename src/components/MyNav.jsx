@@ -17,15 +17,13 @@ function MyNav(props) {
                         <Nav.Link href="#">About</Nav.Link>
                         <Nav.Link href="#">Browse</Nav.Link>
                         <NavDropdown title="Genres" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
-                                Another action
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">
-                                Separated link
-                            </NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.1">Fantasy</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.1">History</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.1">Horror</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.1">Romance</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.1">Scifi</NavDropdown.Item>
+
+
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
