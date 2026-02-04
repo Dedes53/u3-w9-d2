@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 class SingleBook extends Component {
 
     state = {
-        seleced: false
+        selected: false
     }
     // cliccando su una card dovrà verificarsi un cambio di stato e selected diventerà true. A questo punto la card deve ricevere un bordo colorato edell'ombra (ad esempio di colore blu)
 
@@ -19,8 +19,8 @@ class SingleBook extends Component {
             <Col xs={12} md={6} lg={4} xl={3} key={this.props.asin}>
                 <Card className="mb-3"
                     // do a style una condizione basata sullo stato. Quindi se selected è true style avrà un valore (il bordo blue), altrimenti se false style sarà vuoto. 
-                    style={this.state.seleced ? { boxShadow: "0 0 10px blue" } : {}}
-                    onClick={() => this.setState({ seleced: !this.state.seleced })}
+                    style={this.state.selected ? { boxShadow: "0 0 10px blue" } : {}}
+                    onClick={() => this.setState({ selected: !this.state.selected })}
                 >
                     <Card.Img variant="top" src={this.props.img} className="object-fit-cover" />
                     <Card.Body>
