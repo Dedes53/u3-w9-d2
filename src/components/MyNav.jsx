@@ -22,8 +22,6 @@ function MyNav(props) {
                             <NavDropdown.Item href="#action/3.1">Horror</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.1">Romance</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.1">Scifi</NavDropdown.Item>
-
-
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
