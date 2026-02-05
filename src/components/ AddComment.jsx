@@ -13,8 +13,6 @@ const initialComment = {
 // Tramite AddComment dobbiamo fare in modo che l'utente possa inserire un commento e una valutazione (rate) e poi, al submit del form, dobbiamo fare una POST al nostro endpoint per salvare il commento.
 class AddComment extends Component {
 
-
-
     state = {
         newComment: initialComment
     }
