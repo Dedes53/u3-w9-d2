@@ -62,7 +62,10 @@ class CommentArea extends Component {
                 {/* come primo componente gli diamo commentsList, che genera la lista di commenti. this.state.comments corrisponde ad un array che il componente dovrà ciclare */}
                 <CommentsList list={this.state.comments} />
                 {/* come secondo componente gli diamo AddComment, che contiene il form per aggiungere un commento */}
-                <AddComment />
+                <AddComment
+                    asin={this.props.asin}  // ✅ Passa l'asin
+                    refreshComments={this.getComments}  // ✅ Per aggiornare la lista
+                />
             </>
         )
 
