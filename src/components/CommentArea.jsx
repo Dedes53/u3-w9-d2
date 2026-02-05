@@ -13,7 +13,6 @@ class CommentArea extends Component {
 
     state = {
         comments: []
-
     }
 
     getComments = () => {
@@ -52,13 +51,6 @@ class CommentArea extends Component {
         this.getComments();
     }
 
-    // componentDidUpdate(prevProps) {
-    //     if (prevProps.asin !== this.props.asin) {
-    //         this.getComments();
-    //     }
-    // }
-
-
 
     render() {
         return (
@@ -67,8 +59,8 @@ class CommentArea extends Component {
                 <CommentsList list={this.state.comments} />
                 {/* come secondo componente gli diamo AddComment, che contiene il form per aggiungere un commento */}
                 <AddComment
-                    asin={this.props.asin}  // ✅ Passa l'asin
-                    refreshComments={this.getComments}  // ✅ Per aggiornare la lista
+                    asin={this.props.asin}
+                    refreshComments={this.getComments}  // passa la funzione per aggiornare la lista
                 />
             </>
         )

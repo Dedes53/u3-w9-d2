@@ -81,7 +81,7 @@ class AddComment extends Component {
                             })
                         }}
                         aria-label="Number of people selection" required>
-                        <option>Seleziona il numero di persone</option>
+                        <option>Seleziona il voto</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -90,7 +90,7 @@ class AddComment extends Component {
                     </Form.Select>
                 </Form.Group>
                 <Button variant="primary" type="submit">
-                    Submit
+                    Invia
                 </Button>
             </Form >
         )
