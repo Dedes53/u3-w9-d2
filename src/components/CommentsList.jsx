@@ -5,9 +5,10 @@ import ListGroup from 'react-bootstrap/ListGroup';
 const CommentsList = (props) => {
     return (
         <ListGroup>
-            {props.comments.map((comm) =>
+            {props.list.map((comm) =>
                 <ListGroup.Item key={comm.elementId}>
                     <p>{comm.comment}</p>
+                    <p>{comm.rate}</p>
                 </ListGroup.Item>
             )}
         </ListGroup>
