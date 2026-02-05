@@ -2,6 +2,11 @@ import { Component } from "react";
 import CommentsList from "./CommentsList";
 import AddComment from "./ AddComment";
 
+
+const fetchURL = `https://striveschool-api.herokuapp.com/api/comments/`;
+const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTczM2Q0Njg1ZTNiMTAwMTViNWVkOTAiLCJpYXQiOjE3NzAzMDMyOTYsImV4cCI6MTc3MTUxMjg5Nn0.J_uMfQej1JyBhgkd_AVpMD9K7vyOqzIbX-ddI3JhOLc"
+
+
 // CommentArea deve mostrare deve passare a CommentsList l'array di commenti da mostrare e deve mostrare AddComment per permettere di aggiungere un commento
 class CommentArea extends Component {
     // single book passa a CommentArea l'asin del libro selezionato tramite props. Quindi per ottenere i commenti di quel libro dovrò fare una fetch a questo://striveschool-api.herokuapp.com/api/comments/ + this.props.asin  
@@ -21,12 +26,11 @@ class CommentArea extends Component {
         //     return;
         // }
 
-        const fetchURL = `https://striveschool-api.herokuapp.com/api/comments/${this.props.asin}`;
-        console.log("URL che sto chiamando:", fetchURL);
+        console.log("URL che sto chiamando:", fetchURL + this.props.asin);
 
-        fetch(fetchURL, {
+        fetch(fetchURL + this.props.asin, {
             headers: {
-                Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTczM2Q0Njg1ZTNiMTAwMTViNWVkOTAiLCJpYXQiOjE3NzAzMDMyOTYsImV4cCI6MTc3MTUxMjg5Nn0.J_uMfQej1JyBhgkd_AVpMD9K7vyOqzIbX-ddI3JhOLc"
+                Authorization: "Bearer " + key
             }
         })
             .then((res) => {
