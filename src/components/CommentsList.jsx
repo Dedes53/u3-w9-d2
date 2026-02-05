@@ -5,6 +5,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 const CommentsList = (props) => {
     return (
         <ListGroup>
+            <p className="text-center">Recensioni:</p>
             {props.list.map((comm) =>
                 <ListGroup.Item key={comm.elementId}>
                     <p>Cosa ne penso:<br /> {comm.comment}</p>
