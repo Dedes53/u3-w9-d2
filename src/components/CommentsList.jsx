@@ -7,8 +7,8 @@ const CommentsList = (props) => {
         <ListGroup>
             {props.list.map((comm) =>
                 <ListGroup.Item key={comm.elementId}>
-                    <p>{comm.comment}</p>
-                    <p>{comm.rate}</p>
+                    <p>Cosa ne penso:<br /> {comm.comment}</p>
+                    <p>Voto: {comm.rate}/5</p>
                 </ListGroup.Item>
             )}
         </ListGroup>
