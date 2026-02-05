@@ -11,6 +11,7 @@ const BookList = function (props) {
                     props.books.map((book) => (
                         <SingleBook
                             key={book.asin}
+                            asin={book.asin}
                             img={book.img}
                             title={book.title}
                             category={book.category}

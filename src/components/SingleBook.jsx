@@ -33,11 +33,12 @@ class SingleBook extends Component {
                             </div>
                         </Card.Body>
                     </Card>
+
+                    {/* se selected è true allora mostro commentArea, altrimenti non mostro nulla */
+                        this.state.selected && <CommentArea asin={this.props.asin} />
+                    }
                 </Col>
 
-                {/* se selected è true allora mostro commentArea, altrimenti non mostro nulla */
-                    this.state.selected && <CommentArea asin={this.props.asin} />
-                }
 
             </>
 
